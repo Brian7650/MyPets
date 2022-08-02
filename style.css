@@ -1,12 +1,13 @@
 * {
     margin: 0px;
+    background-color:#ffffff ;
 }
 
 .zone {
-    color:#fff;
+    color:#4B6587;
     font-size: 2em;
     border-radius: 4px;
-    border: 1px solid #bbb;
+    border: 1px solid #F7F6F2;
     transition: all 0.4s linear;
 }
 
@@ -23,6 +24,7 @@ zone:hover {
     list-style: none;
     margin: 0;
     font-size: 0.7em;
+    background-color: #4B6587;
 }
 
 @media only screen and (max-width: 600px) {
@@ -34,38 +36,91 @@ zone:hover {
 
 .push {
     margin-left: auto;
+    padding-left: 1px;
 }
 
 li {
-    padding: 10px;
+  background-color: #4B6587;
+  color: #ffffff;  
+  padding: 10px;
 }
 
-a {
-    color: #ff7f50;
+ul {
+  padding-left: 5px;
+}
+
+a {  
+  color: #ffffff!important;
     text-decoration: none;
 }
 
 /************* containers *******************/
 .container {
-    height: 50vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color:#ffffff ;
 }
+
+@media screen and (max-width: 850px) {
+    .container,
+    .carousel,
+    .carousel-inner,
+    .carousel-item,
+    .d-block {
+      font-size: 1rem;
+      padding: 1px;
+      width: 450px;
+      height: 100%;
+      /* font-weight: bold;
+      height: 175px; */
+    }
+  }
+  
+.carousel-indicators,
+ol {
+  opacity: 10
+}
+
+  /* @media screen and (max-width: 500px){
+    .card-text {
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+  } */
 
 /* ********** Grid Pamel********************* */
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap:15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1px;
 }
 
 .box {
-    background-color: #ff7f50;
-    padding: 30px;
+    background-color: #4B6587;
+    padding: 10px;
     margin: 20px;
 }
 
 .box > img { 
     width: 100%;
 }
+
+@media only screen and (max-width: 452px) {
+    .grid-wrapper, 
+    .box {
+      font-size: 0.5em;
+      height: 100%;
+      padding: 1;
+      size: 150px;
+    }
+  }
+
+  footer,
+  p {
+    background-color: #4B6587;
+    color: #ffffff;
+    border: #4B6587;
+    font-size: 0.7em;
+  }
